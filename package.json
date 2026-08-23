@@ -1,0 +1,29 @@
+{
+  "name": "novamart-ecommerce",
+  "version": "1.0.0",
+  "description": "Amazon-style Full-Stack E-Commerce Web Application",
+  "main": "server/src/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "start": "node server/src/server.js",
+    "server": "npm run start --prefix server",
+    "server:dev": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "seed": "npm run seed --prefix server",
+    "install-all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "keywords": [
+    "ecommerce",
+    "react",
+    "mongodb",
+    "express",
+    "nodejs",
+    "amazon-clone"
+  ],
+  "author": "NovaMart Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
